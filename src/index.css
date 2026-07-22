@@ -1608,3 +1608,273 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .animate-up {
   animation: fadeUp 0.6s ease both;
 }
+
+/* ============================================================
+   SERVICES PAGE
+   ============================================================ */
+
+/* --- Hero --- */
+.svc-hero-section {
+  padding: 0 16px;
+}
+.svc-hero-inner {
+  background: var(--gold-20);
+  border-radius: 20px;
+  padding: 80px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+.svc-hero-heading {
+  display: flex;
+  gap: 64px;
+  align-items: flex-end;
+}
+.svc-hero-heading h1 {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 72px;
+  letter-spacing: -2.24px;
+  color: var(--navy);
+  flex: 0 0 720px;
+}
+.svc-hero-heading p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  color: #616161;
+  flex: 1;
+  align-self: flex-end;
+}
+.svc-hero-image {
+  width: 100%;
+  aspect-ratio: 1280 / 620;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.svc-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- Service overview cards grid --- */
+.svc-overview-grid {
+  padding: 40px 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.svc-overview-card {
+  background: var(--gold-10);
+  border-radius: 20px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.svc-overview-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.svc-overview-num {
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--gold);
+}
+.svc-overview-title {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+  color: #212121;
+}
+
+/* --- Service detail sections --- */
+.svc-detail-section {
+  padding: 0 16px;
+}
+.svc-detail-inner {
+  padding: 80px 64px;
+  display: flex;
+  gap: 120px;
+  align-items: flex-start;
+}
+.svc-detail-gold .svc-detail-inner {
+  background: var(--gold-20);
+}
+.svc-detail-left {
+  flex: 0 0 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.svc-detail-num {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--gold);
+}
+.svc-detail-left h2 {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.3;
+  letter-spacing: -1.6px;
+  color: #212121;
+}
+.svc-detail-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-self: flex-start;
+}
+.svc-detail-desc {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  color: #616161;
+}
+.svc-deliverables h3 {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: -0.48px;
+  color: #212121;
+  margin-bottom: 16px;
+}
+.svc-deliverables ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+  list-style: disc;
+}
+.svc-deliverables li {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  color: #616161;
+}
+
+/* --- Bespoke section --- */
+.bespoke-section {
+  background: var(--navy);
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  padding: 100px 80px;
+  overflow: hidden;
+}
+.bespoke-image {
+  flex: 0 0 420px;
+  height: 420px;
+  border-radius: 42px;
+  overflow: hidden;
+}
+.bespoke-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+.bespoke-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.bespoke-label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #cca275;
+  margin-bottom: 24px;
+}
+.bespoke-text h2 {
+  font-family: 'Merriweather', serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.2;
+  letter-spacing: -1.4px;
+  color: #fcfcfc;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+}
+.bespoke-text p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #bdbdbd;
+}
+.btn-outline-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 24px;
+  border-radius: 80px;
+  border: 1.5px solid var(--white);
+  background: transparent;
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  align-self: flex-start;
+}
+.btn-outline-white:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* --- Services responsive --- */
+@media (max-width: 1100px) {
+  .svc-hero-heading {
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+  }
+  .svc-hero-heading h1 { flex: unset; font-size: 40px; line-height: 52px; }
+  .svc-overview-grid { padding: 32px 24px; }
+  .svc-detail-inner { gap: 48px; }
+  .svc-detail-left { flex: 0 0 320px; }
+  .svc-detail-left h2 { font-size: 36px; }
+  .bespoke-section { gap: 48px; padding: 80px 40px; }
+  .bespoke-image { flex: 0 0 320px; height: 320px; }
+  .bespoke-text h2 { font-size: 36px; }
+}
+
+@media (max-width: 768px) {
+  .svc-hero-inner { padding: 40px 20px; gap: 32px; }
+  .svc-hero-heading h1 { font-size: 32px; line-height: 44px; }
+  .svc-hero-image { aspect-ratio: 4/3; }
+  .svc-overview-grid {
+    grid-template-columns: 1fr;
+    padding: 24px 20px;
+    gap: 24px;
+  }
+  .svc-detail-section { padding: 0 8px; }
+  .svc-detail-inner {
+    flex-direction: column;
+    padding: 60px 20px;
+    gap: 32px;
+  }
+  .svc-detail-left { flex: unset; width: 100%; }
+  .svc-detail-left h2 { font-size: 32px; line-height: 1.3; }
+  .svc-detail-right { gap: 32px; }
+  .bespoke-section { flex-direction: column; padding: 60px 20px; gap: 40px; }
+  .bespoke-image { flex: unset; width: 100%; height: 280px; border-radius: 24px; }
+  .bespoke-text h2 { font-size: 32px; }
+}
