@@ -1736,6 +1736,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   gap: 48px;
   align-self: flex-start;
 }
+.svc-detail-right .btn { align-self: flex-start; }
 .svc-detail-desc {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
