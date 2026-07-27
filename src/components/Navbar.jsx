@@ -5,8 +5,8 @@ const navItems = [
   { label: 'Home', to: '/' },
   { label: 'About', to: '/about' },
   { label: 'Services', to: '/services' },
-  { label: 'Insights', to: '/#blog' },
-  { label: 'Contact', to: '/#contact' },
+  { label: 'Insights', to: '/insights' },
+  { label: 'Contact', to: '/contact' },
 ]
 
 export default function Navbar() {

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const testimonials = [
   {
@@ -17,7 +17,26 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   const [current, setCurrent] = useState(0)
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window === 'undefined') return false
+    return window.innerWidth <= 768
+  })
   const total = testimonials.length
+  const maxIndex = isMobile ? total - 1 : 0
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768)
+    }
+
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  useEffect(() => {
+    setCurrent((prev) => Math.min(prev, maxIndex))
+  }, [maxIndex])
 
   return (
     <section className="testimonials-section" id="testimonials">
@@ -29,7 +48,7 @@ export default function TestimonialsSection() {
         <div className="testimonials-slider">
           <div
             className="testi-track"
-            style={{ transform: `translateX(-${current * 50}%)` }}
+            style={{ transform: `translateX(-${isMobile ? current * 100 : 0}%)` }}
           >
             {testimonials.map((t) => (
               <div className="testi-card" key={t.name}>
@@ -61,18 +80,20 @@ export default function TestimonialsSection() {
             className={'testi-btn testi-prev' + (current > 0 ? ' active' : '')}
             onClick={() => setCurrent(c => Math.max(0, c - 1))}
             aria-label="Previous testimonial"
+            disabled={current === 0}
           >
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-              <path d="M16 10H4M4 10L9 5M4 10L9 15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M16 10H4M4 10L9 5M4 10L9 15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </button>
           <button
-            className={'testi-btn testi-next' + (current < total - 2 ? ' active' : '')}
-            onClick={() => setCurrent(c => Math.min(total - 2, c + 1))}
+            className={'testi-btn testi-next' + (current < maxIndex ? ' active' : '')}
+            onClick={() => setCurrent(c => Math.min(maxIndex, c + 1))}
             aria-label="Next testimonial"
+            disabled={current >= maxIndex}
           >
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-              <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </button>
         </div>

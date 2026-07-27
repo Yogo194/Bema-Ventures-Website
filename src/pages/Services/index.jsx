@@ -35,7 +35,15 @@ const services = [
   },
   {
     num: '03',
-    title: 'Organisational Readiness & Emerging Risk Assessment',
+    title: (
+      <>
+        Organisational
+        <br />
+        Readiness &amp; Emerging
+        <br />
+        Risk Assessment
+      </>
+    ),
     desc: 'Emerging risks demand emerging capabilities. We assess readiness across cyber, AI, fintech partnerships and operational resilience, translating findings into an actionable roadmap.',
     deliverables: [
       'Cyber and operational resilience reviews',
@@ -47,7 +55,13 @@ const services = [
   },
   {
     num: '04',
-    title: 'Workforce & Capability Advisory',
+    title: (
+      <>
+        Workforce &amp;
+        <br />
+        Capability Advisory
+      </>
+    ),
     desc: 'The strongest controls fail without the right people. We advise on capability frameworks, succession planning and talent retention for second- and third-line functions.',
     deliverables: [
       'Capability and skills-gap analyses',

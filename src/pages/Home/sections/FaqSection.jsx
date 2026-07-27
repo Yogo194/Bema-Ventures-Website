@@ -29,10 +29,10 @@ export default function FaqSection() {
   return (
     <section className="faq-section" id="faq">
       <div className="faq-inner">
-        <div className="section-header centered">
+        <div className="faq-header">
           <div className="section-label">FAQ</div>
           <h2 className="section-heading">Questions, answered plainly.</h2>
-          <p className="section-body" style={{ maxWidth: 600, margin: '0 auto' }}>
+          <p className="section-body faq-intro">
             For matters not covered below, please write to us directly. Every enquiry is answered personally within one business day.
           </p>
         </div>
@@ -51,8 +51,8 @@ export default function FaqSection() {
                     src={isOpen ? '/assets/caret-up.svg' : '/assets/caret-down.svg'}
                     className="faq-icon"
                     alt=""
-                    width="28"
-                    height="15"
+                    width="18"
+                    height="10"
                   />
                 </button>
                 {isOpen && (

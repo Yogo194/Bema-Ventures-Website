@@ -21,10 +21,10 @@
     </div>
     <nav class="mobile-nav">
       <a href="#hero">Home</a>
-      <a href="#about">About</a>
+      <a href="/about">About</a>
       <a href="#services">Services</a>
-      <a href="#blog">Insights</a>
-      <a href="#contact">Contact</a>
+      <a href="/insights">Insights</a>
+      <a href="/contact">Contact</a>
     </nav>
   `;
   document.body.appendChild(overlay);

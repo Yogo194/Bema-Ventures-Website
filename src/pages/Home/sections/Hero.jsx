@@ -6,16 +6,18 @@ export default function Hero() {
       <div className="hero-inner">
         <div className="hero-content">
           <div className="hero-text">
-            <div className="tag">
-              <img src="/assets/icon-business.svg" alt="" width="24" height="24" />
-              <span>Governance · Risk · Compliance</span>
+            <div className="hero-copy">
+              <div className="tag">
+                <img src="/assets/icon-business.svg" alt="" width="24" height="24" />
+                <span>Governance · Risk · Compliance</span>
+              </div>
+              <h1 className="hero-headline">
+                Where institutional trust <em>meets counsel.</em>
+              </h1>
+              <p className="hero-body">
+                Bema Ventures is a UK-registered advisory firm guiding banks, fintechs and regulated enterprises through governance, risk and regulatory complexity — with the discretion and judgement the work demands.
+              </p>
             </div>
-            <h1 className="hero-headline">
-              Where institutional trust <em>meets counsel.</em>
-            </h1>
-            <p className="hero-body">
-              Bema Ventures is a UK-registered advisory firm guiding banks, fintechs and regulated enterprises through governance, risk and regulatory complexity — with the discretion and judgement the work demands.
-            </p>
             <div className="btn-group">
               <a href="#contact" className="btn btn-primary">
                 Request a Consultation
