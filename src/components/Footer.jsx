@@ -23,6 +23,21 @@ export default function Footer() {
                 <button type="submit" className="newsletter-btn">Send</button>
               </form>
             </div>
+            <div className="footer-social">
+              <span>Stay Connected</span>
+              <div className="social-icons">
+                {[
+                  { icon: 'social-twitter.svg', label: 'Twitter', w: 24, h: 24 },
+                  { icon: 'social-facebook.svg', label: 'Facebook', w: 24, h: 24 },
+                  { icon: 'social-instagram.svg', label: 'Instagram', w: 24, h: 24 },
+                  { icon: 'social-linkedin.svg', label: 'LinkedIn', w: 24, h: 24 },
+                ].map(({ icon, label, w, h }) => (
+                  <a key={label} href="#" className="social-icon" aria-label={label}>
+                    <img src={`/assets/${icon}`} alt={label} width={w} height={h} />
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
           <div className="footer-links">
             <div className="footer-col">
@@ -30,43 +45,34 @@ export default function Footer() {
               <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About</Link></li>
-                <li><Link to="/#services">Services</Link></li>
-                <li><Link to="/#blog">Insights</Link></li>
-                <li><Link to="/#contact">Contact Us</Link></li>
+                <li><Link to="/services">Services</Link></li>
+                <li><Link to="/insights">Insights</Link></li>
+                <li><Link to="/contact">Contact Us</Link></li>
               </ul>
             </div>
-            <div className="footer-col">
+            <div className="footer-col footer-col-contact">
               <h4>Contact</h4>
               <ul className="footer-contact">
                 <li>
-                  <img src="/assets/icon-envelope.svg" alt="" width="20" height="18" />
+                  <span className="footer-contact-icon">
+                    <img src="/assets/icon-envelope.svg" alt="" width="24" height="24" />
+                  </span>
                   <a href="mailto:Rotimiomotayo@gmail.com">Rotimiomotayo@gmail.com</a>
                 </li>
                 <li>
-                  <img src="/assets/icon-phone.svg" alt="" width="19" height="19" />
+                  <span className="footer-contact-icon">
+                    <img src="/assets/icon-phone.svg" alt="" width="24" height="24" />
+                  </span>
                   <a href="tel:+44723">+44723</a>
                 </li>
-                <li>
-                  <img src="/assets/icon-map.svg" alt="" width="17" height="21" />
+                <li className="footer-contact-address">
+                  <span className="footer-contact-icon">
+                    <img src="/assets/icon-map.svg" alt="" width="24" height="24" />
+                  </span>
                   <span>178 Blackthorn Road, Southampton, United Kingdom SO19 7LQ</span>
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-        <div className="footer-social">
-          <span>Stay Connected</span>
-          <div className="social-icons">
-            {[
-              { icon: 'social-twitter.svg', label: 'Twitter', w: 24, h: 24 },
-              { icon: 'social-facebook.svg', label: 'Facebook', w: 24, h: 24 },
-              { icon: 'social-instagram.svg', label: 'Instagram', w: 24, h: 24 },
-              { icon: 'social-linkedin.svg', label: 'LinkedIn', w: 24, h: 24 },
-            ].map(({ icon, label, w, h }) => (
-              <a key={label} href="#" className="social-icon" aria-label={label}>
-                <img src={`/assets/${icon}`} alt={label} width={w} height={h} />
-              </a>
-            ))}
           </div>
         </div>
         <div className="footer-bottom">
