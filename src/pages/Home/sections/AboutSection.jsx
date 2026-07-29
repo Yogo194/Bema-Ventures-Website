@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function AboutSection() {
   return (
     <section className="about-section" id="about">
@@ -14,10 +16,10 @@ export default function AboutSection() {
           <p className="section-body">
             We do not produce decks for their own sake. Every engagement is led by senior practitioners who have sat in the chair our clients occupy — and have answered to the regulators they answer to. The result is advice that is candid, commercially aware and built to be implemented.
           </p>
-          <a href="#founder" className="btn btn-primary">
+          <Link to="/about" className="btn btn-primary">
             Learn More
             <img src="/assets/arrow-right.svg" alt="" width="18" height="15" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

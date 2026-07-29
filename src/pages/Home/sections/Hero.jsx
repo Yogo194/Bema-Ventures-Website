@@ -19,11 +19,16 @@ export default function Hero() {
               </p>
             </div>
             <div className="btn-group">
-              <a href="#contact" className="btn btn-primary">
+              <a
+                href="mailto:Rotimiomotayo@gmail.com"
+                className="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Request a Consultation
                 <img src="/assets/arrow-upright.svg" alt="" width="14" height="14" />
               </a>
-              <a href="#services" className="btn btn-outline">Explore Services</a>
+              <Link to="/services" className="btn btn-outline">Explore Services</Link>
             </div>
           </div>
           <div className="hero-image">

@@ -16,7 +16,12 @@ export default function ServiceDetail({ num, title, desc, deliverables, gold }) 
               ))}
             </ul>
           </div>
-          <a href="mailto:Rotimiomotayo@gmail.com" className="btn btn-primary">
+          <a
+            href="mailto:Rotimiomotayo@gmail.com"
+            className="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Discuss the Engagement
           </a>
         </div>

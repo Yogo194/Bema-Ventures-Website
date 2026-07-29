@@ -18,7 +18,14 @@ export default function AboutCta() {
           <h2>Let&apos;s Build Your Business Future Together</h2>
           <p>Partner with Bema Ventures to streamline operations, grow your reach, and unlock your next stage of business growth.</p>
         </div>
-        <a href="mailto:Rotimiomotayo@gmail.com" className="btn btn-primary">Request a Consultation</a>
+        <a
+          href="mailto:Rotimiomotayo@gmail.com"
+          className="btn btn-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Request a Consultation
+        </a>
       </div>
     </section>
   )

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function FounderSection() {
   return (
     <section className="founder-section" id="founder">
@@ -26,10 +28,10 @@ export default function FounderSection() {
               <span className="metric-label">Registered</span>
             </div>
           </div>
-          <a href="#contact" className="btn btn-primary">
+          <Link to="/about#leadership" className="btn btn-primary">
             Read Full Profile
             <img src="/assets/arrow-right.svg" alt="" width="18" height="15" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

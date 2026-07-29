@@ -7,7 +7,7 @@ const credentials = [
 
 export default function LeadershipSection() {
   return (
-    <section className="leadership-section">
+    <section className="leadership-section" id="leadership">
       <div className="leadership-inner">
         <div className="founder-photo-wrap">
           <img src="/assets/founder-portrait.jpg" alt="Rotimi Omotayo" />

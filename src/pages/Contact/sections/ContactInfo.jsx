@@ -43,7 +43,14 @@ export default function ContactInfo() {
               <div className="contact-info-text">
                 <h3>{title}</h3>
                 {href ? (
-                  <a href={href}>{detail}</a>
+                  <a
+                    href={href}
+                    {...(href.startsWith('mailto:')
+                      ? { target: '_blank', rel: 'noopener noreferrer' }
+                      : {})}
+                  >
+                    {detail}
+                  </a>
                 ) : (
                   <p>{detail}</p>
                 )}

@@ -18,7 +18,12 @@ export default function BespokeSection() {
             </p>
           </div>
         </div>
-        <a href="mailto:Rotimiomotayo@gmail.com" className="btn btn-outline-white">
+        <a
+          href="mailto:Rotimiomotayo@gmail.com"
+          className="btn btn-outline-white"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Discuss a Bespoke Engagement
         </a>
       </div>

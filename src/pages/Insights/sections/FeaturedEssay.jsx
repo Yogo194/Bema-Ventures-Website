@@ -1,23 +1,28 @@
+import { Link } from 'react-router-dom'
+import { essayPath, getFeaturedEssay } from '../../../data/essays'
+
 export default function FeaturedEssay() {
+  const essay = getFeaturedEssay()
+
   return (
     <section className="featured-essay-section">
       <div className="featured-essay-inner">
         <div className="featured-essay-image">
-          <img src="/assets/insights-featured.jpg" alt="Boardroom discussion" />
+          <img src={`/assets/${essay.img}`} alt="" />
         </div>
         <div className="featured-essay-content">
           <div className="featured-essay-text">
-            <div className="section-label">Governance</div>
-            <h2>The new shape of board oversight: from quarterly cadence to continuous assurance</h2>
-            <p>For a generation, the boardroom calendar was a settled affair. Four meetings, a strategy day, and the audit committee in between. That settlement is over. We examine why the most resilient boards are moving from periodic review to continuous assurance — and what that demands of the executive.</p>
+            <div className="section-label">{essay.category}</div>
+            <h2>{essay.title}</h2>
+            <p>{essay.excerpt}</p>
             <div className="featured-essay-meta">
               <span className="featured-essay-date">
                 <img src="/assets/icon-calendar.svg" alt="" width="18" height="18" />
-                April 2026
+                {essay.date}
               </span>
               <span className="featured-essay-read">
                 <img src="/assets/icon-time.svg" alt="" width="18" height="18" />
-                12 min read
+                {essay.read}
               </span>
             </div>
           </div>
@@ -30,7 +35,7 @@ export default function FeaturedEssay() {
               <span className="featured-essay-author-role">Founder &amp; Principal</span>
             </div>
           </div>
-          <a href="#" className="btn btn-primary">Read the Essay</a>
+          <Link to={essayPath(essay.slug)} className="btn btn-primary">Read the Essay</Link>
         </div>
       </div>
     </section>

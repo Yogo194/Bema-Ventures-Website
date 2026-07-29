@@ -57,7 +57,9 @@ export default function Footer() {
                   <span className="footer-contact-icon">
                     <img src="/assets/icon-envelope.svg" alt="" width="24" height="24" />
                   </span>
-                  <a href="mailto:Rotimiomotayo@gmail.com">Rotimiomotayo@gmail.com</a>
+                  <a href="mailto:Rotimiomotayo@gmail.com" target="_blank" rel="noopener noreferrer">
+                    Rotimiomotayo@gmail.com
+                  </a>
                 </li>
                 <li>
                   <span className="footer-contact-icon">

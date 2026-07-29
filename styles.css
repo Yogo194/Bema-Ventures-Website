@@ -33,8 +33,21 @@
 
 /* ---------- Reset ---------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body { font-family: var(--font-body); background: var(--gold-10); color: var(--grey-90); line-height: 1.6; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+body {
+  font-family: var(--font-body);
+  background: var(--gold-10);
+  color: var(--grey-90);
+  line-height: 1.6;
+  overflow-x: hidden;
+  overflow-x: clip;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
 img { display: block; max-width: 100%; }
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
@@ -905,9 +918,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   border-radius: var(--radius-pill);
   padding: 8px 8px 8px 24px;
   gap: 8px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 .newsletter-input {
-  flex: 1;
+  flex: 1 1 0;
+  min-width: 0;
+  width: 100%;
   border: none;
   background: none;
   outline: none;
@@ -925,7 +944,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  min-width: 80px;
+  min-width: 72px;
+  flex-shrink: 0;
   transition: opacity 0.2s;
 }
 .newsletter-btn:hover { opacity: 0.85; }
@@ -1438,33 +1458,33 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   /* Hero */
   .about-hero-inner { padding: 40px 12px 12px; gap: 40px; }
   .about-hero-heading { flex-direction: column; gap: 24px; align-items: flex-start; }
-  .about-hero-heading h1 { font-size: 40px; line-height: 48px; letter-spacing: -0.8px; flex: none; }
+  .about-hero-heading h1 { font-size: 32px; line-height: 44px; letter-spacing: -0.8px; flex: none; }
   .about-hero-image { aspect-ratio: 374 / 240; }
 
   /* Mission */
   .mission-inner { padding: 40px 12px 80px; gap: 56px; }
-  .mission-text h2 { font-size: 40px; line-height: 48px; letter-spacing: -0.8px; }
+  .mission-text h2 { font-size: 32px; line-height: 44px; letter-spacing: -0.8px; }
   .mission-body { font-size: 16px; line-height: 26px; }
   .video-container { height: 300px; }
 
   /* Values */
   .about-values-inner { padding: 80px 12px; gap: 48px; }
   .about-values-heading { flex-direction: column; gap: 24px; }
-  .about-values-heading-right h2 { font-size: 40px; line-height: 48px; letter-spacing: -0.8px; }
+  .about-values-heading-right h2 { font-size: 32px; line-height: 44px; letter-spacing: -0.8px; }
   .values-card-grid { grid-template-columns: 1fr; }
 
   /* Leadership */
   .leadership-section { padding: 40px 8px; }
   .leadership-inner { flex-direction: column; gap: 40px; }
   .founder-photo-wrap { width: 100%; height: auto; aspect-ratio: 1/1; }
-  .leadership-text h2 { font-size: 40px; line-height: 48px; letter-spacing: -0.8px; }
+  .leadership-text h2 { font-size: 32px; line-height: 44px; letter-spacing: -0.8px; }
   .credentials-grid { grid-template-columns: 1fr; }
   .leadership-content { width: 100%; padding: 0 12px; }
 
   /* CTA */
   .about-cta-section { padding: 40px 8px; }
   .about-cta-inner { padding: 80px 12px; border-radius: var(--radius-md); }
-  .about-cta-inner h2 { font-size: 40px; line-height: 48px; letter-spacing: -0.8px; }
+  .about-cta-inner h2 { font-size: 32px; line-height: 44px; letter-spacing: -0.8px; }
   .about-cta-inner p { font-size: 16px; line-height: 26px; }
 }
 
@@ -1507,6 +1527,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    RESPONSIVE — MOBILE (max 768px)
    ============================================================ */
 @media (max-width: 768px) {
+  /* Shared display headings */
+  .section-heading {
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: -0.8px;
+  }
+
   /* Navbar */
   .navbar-inner { padding: 16px 20px; }
   .nav-links { display: none; }
@@ -1519,7 +1546,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     padding: 80px 12px 12px;
     gap: 56px;
   }
-  .hero-headline { font-size: 40px; line-height: 48px; letter-spacing: -0.8px; max-width: 100%; }
+  .hero-headline { font-size: 32px; line-height: 44px; letter-spacing: -0.8px; max-width: 100%; }
   .hero-body { max-width: 100%; }
   .hero-image { width: 100%; height: 549px; }
   .btn-group { flex-direction: column; align-items: flex-start; }
@@ -1527,8 +1554,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
   /* Credentials */
   .credentials-bar { padding: 40px 20px; }
-  .credentials-inner { gap: 16px; }
-  .credentials-inner span { font-size: 18px; }
+  .credentials-inner {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 12px;
+  }
+  .credentials-inner span { font-size: 13px; line-height: 20px; letter-spacing: 0.2px; }
 
   /* About */
   .about-inner {
@@ -1536,11 +1567,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     padding: 40px 12px 80px;
   }
   .about-image { width: 100%; height: 420px; }
-  .about-text .section-heading { font-size: 40px; line-height: 48px; }
+  .about-text .section-heading { font-size: 32px; line-height: 44px; letter-spacing: -0.8px; }
 
   /* Services */
   .services-section { padding: 0 8px; }
   .services-inner { padding: 80px 12px; gap: 48px; }
+  .services-inner .section-heading { font-size: 32px; line-height: 44px; letter-spacing: -0.8px; }
   .service-grid { grid-template-columns: 1fr; }
 
   /* Founder */
@@ -1549,14 +1581,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     padding: 40px 12px 80px;
   }
   .founder-image { width: 100%; height: 420px; }
-  .founder-text .section-heading { font-size: 40px; line-height: 48px; }
+  .founder-text .section-heading { font-size: 32px; line-height: 44px; letter-spacing: -0.8px; }
   .metric-value { font-size: 40px; line-height: 48px; }
 
   /* Values */
   .values-section { padding: 0 8px; }
   .values-inner { padding: 80px 12px; gap: 48px; }
   .values-header { flex-direction: column; gap: 24px; }
-  .values-header-right .section-heading { font-size: 40px; line-height: 48px; }
+  .values-header-right .section-heading { font-size: 32px; line-height: 44px; letter-spacing: -0.8px; }
   .values-grid { grid-template-columns: 1fr; }
 
   /* Testimonials */
@@ -1566,25 +1598,25 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .testi-body p { font-size: 16px; line-height: 26px; }
   .testi-name { font-size: 20px; }
   .testi-role { font-size: 16px; }
-  .testimonials-inner .section-heading { font-size: 40px; line-height: 48px; }
+  .testimonials-inner .section-heading { font-size: 32px; line-height: 44px; letter-spacing: -0.8px; }
 
   /* FAQ */
   .faq-section { padding: 0 8px; }
   .faq-inner { padding: 80px 12px; }
-  .faq-inner .section-heading { font-size: 40px; line-height: 48px; }
+  .faq-inner .section-heading { font-size: 32px; line-height: 44px; letter-spacing: -0.8px; }
   .faq-question { font-size: 18px; padding: 24px 20px; }
   .faq-answer { padding: 0 20px 24px; }
 
   /* Blog */
   .blog-section { padding: 80px 20px; }
   .blog-header { flex-direction: column; align-items: flex-start; }
-  .blog-header .section-heading { font-size: 40px; line-height: 48px; }
+  .blog-header .section-heading { font-size: 32px; line-height: 44px; letter-spacing: -0.8px; }
   .blog-grid { grid-template-columns: 1fr; }
 
   /* CTA */
   .cta-section { padding: 0 8px; }
   .cta-inner { padding: 120px 20px; }
-  .cta-text h2 { font-size: 40px; line-height: 48px; letter-spacing: -1.6px; }
+  .cta-text h2 { font-size: 32px; line-height: 44px; letter-spacing: -0.8px; }
   .cta-text p { font-size: 16px; line-height: 24px; }
 
   /* Footer */
