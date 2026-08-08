@@ -19,7 +19,7 @@ export default function BespokeSection() {
           </div>
         </div>
         <a
-          href="mailto:Rotimiomotayo@gmail.com"
+          href="mailto:bemaventuresltd@gmail.com"
           className="btn btn-outline-white"
           target="_blank"
           rel="noopener noreferrer"

@@ -490,7 +490,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top center;
+  object-position: center center;
 }
 .founder-text {
   flex: 1;
@@ -1523,13 +1523,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .founder-photo-wrap img {
   position: absolute;
-  left: 0;
-  top: 0.08%;
+  inset: 0;
   width: 100%;
-  height: 150.04%;
+  height: 100%;
   max-width: none;
   object-fit: cover;
-  object-position: top center;
+  object-position: center center;
 }
 .founder-photo-gradient {
   position: absolute;
@@ -1790,8 +1789,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .leadership-inner { flex-direction: column; gap: 40px; }
   .founder-photo-wrap { width: 100%; height: auto; aspect-ratio: 1/1; }
   .founder-photo-wrap img {
-    left: 0;
-    top: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
   }

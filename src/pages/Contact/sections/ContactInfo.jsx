@@ -1,25 +1,25 @@
 const channels = [
   {
     title: 'Call Us',
-    detail: '+44723',
-    href: 'tel:+44723',
+    detail: '+447723856788',
+    href: 'tel:+447723856788',
     icon: '/assets/contact-icon-phone.svg',
   },
   {
     title: 'Email Us',
-    detail: 'Rotimiomotayo1@gmail.com',
-    href: 'mailto:Rotimiomotayo1@gmail.com',
+    detail: 'bemaventuresltd@gmail.com',
+    href: 'mailto:bemaventuresltd@gmail.com',
     icon: '/assets/contact-icon-email.svg',
   },
-  {
-    title: 'Our Office',
-    detail: '· 178 Blackthorn Road, Southampton, UK SO19 7LQ',
-    href: null,
-    icon: '/assets/contact-icon-office.svg',
-  },
+  // {
+  //   title: 'Our Office',
+  //   detail: '· 178 Blackthorn Road, Southampton, UK SO19 7LQ',
+  //   href: null,
+  //   icon: '/assets/contact-icon-office.svg',
+  // },
   {
     title: 'Business Hours',
-    detail: 'Mon–Fri, 9:00 AM – 6:00 PM (EST)',
+    detail: 'Monday – Friday 9.00am – 5.00pm',
     href: null,
     icon: '/assets/contact-icon-hours.svg',
   },

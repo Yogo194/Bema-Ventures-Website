@@ -57,22 +57,22 @@ export default function Footer() {
                   <span className="footer-contact-icon">
                     <img src="/assets/icon-envelope.svg" alt="" width="24" height="24" />
                   </span>
-                  <a href="mailto:Rotimiomotayo@gmail.com" target="_blank" rel="noopener noreferrer">
-                    Rotimiomotayo@gmail.com
+                  <a href="mailto:bemaventuresltd@gmail.com" target="_blank" rel="noopener noreferrer">
+                    bemaventuresltd@gmail.com
                   </a>
                 </li>
                 <li>
                   <span className="footer-contact-icon">
                     <img src="/assets/icon-phone.svg" alt="" width="24" height="24" />
                   </span>
-                  <a href="tel:+44723">+44723</a>
+                  <a href="tel:+447723856788">+447723856788</a>
                 </li>
-                <li className="footer-contact-address">
+                {/* <li className="footer-contact-address">
                   <span className="footer-contact-icon">
                     <img src="/assets/icon-map.svg" alt="" width="24" height="24" />
                   </span>
                   <span>178 Blackthorn Road, Southampton, United Kingdom SO19 7LQ</span>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

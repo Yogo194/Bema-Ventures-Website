@@ -5,7 +5,7 @@ export default function FounderSection() {
     <section className="founder-section" id="founder">
       <div className="founder-inner">
         <div className="founder-image">
-          <img src="/assets/founder.jpg" alt="Rotimi Omotayo" />
+          <img src="/assets/founder-portrait.jpg" alt="Rotimi Omotayo" />
         </div>
         <div className="founder-text">
           <div className="section-label">Founder</div>

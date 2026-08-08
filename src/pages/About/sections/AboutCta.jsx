@@ -19,7 +19,7 @@ export default function AboutCta() {
           <p>Partner with Bema Ventures to streamline operations, grow your reach, and unlock your next stage of business growth.</p>
         </div>
         <a
-          href="mailto:Rotimiomotayo@gmail.com"
+          href="mailto:bemaventuresltd@gmail.com"
           className="btn btn-primary"
           target="_blank"
           rel="noopener noreferrer"

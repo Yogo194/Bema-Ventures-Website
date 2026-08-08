@@ -15,12 +15,12 @@ export default function Hero() {
                 Where institutional trust <em>meets counsel.</em>
               </h1>
               <p className="hero-body">
-                Bema Ventures is a UK-registered advisory firm guiding banks, fintechs and regulated enterprises through governance, risk and regulatory complexity — with the discretion and judgement the work demands.
+                Bema Ventures is a UK-registered advisory and consulting firm guiding banks, fintechs and regulated enterprises through governance, risk and regulatory complexity — with the discretion and judgement the work demands.
               </p>
             </div>
             <div className="btn-group">
               <a
-                href="mailto:Rotimiomotayo@gmail.com"
+                href="mailto:bemaventuresltd@gmail.com"
                 className="btn btn-primary"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -40,7 +40,7 @@ export default function CtaSection() {
           <p>Initial consultations are confidential and without obligation. We respond personally to every enquiry within one business day.</p>
         </div>
         <a
-          href="mailto:Rotimiomotayo@gmail.com"
+          href="mailto:bemaventuresltd@gmail.com"
           className="btn btn-primary"
           target="_blank"
           rel="noopener noreferrer"

@@ -10,7 +10,7 @@ export default function AboutSection() {
         <div className="about-text">
           <div className="section-label">The Firm</div>
           <h2 className="section-heading">
-            A senior advisory practice built on three decades inside the institutions we now counsel.
+            A senior advisory and consulting practice built on three decades inside the institutions we now counsel.
           </h2>
           <p className="section-italic">Unlock full potential through customized consulting solutions</p>
           <p className="section-body">

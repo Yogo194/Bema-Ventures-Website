@@ -2,7 +2,7 @@ const values = [
   { num: '01', title: 'Independence', desc: 'We give counsel that is unshaped by commercial pressure. Where we cannot help, we say so.' },
   { num: '02', title: 'Discretion', desc: 'Sensitive matters are handled with the confidentiality the boardroom expects.' },
   { num: '03', title: 'Practitioner Depth', desc: 'Every engagement is led by professionals who have done the work, not merely studied it.' },
-  { num: '04', title: 'Proportionality', desc: 'Frameworks scaled to the risk and the institution — never compliance for its own sake.' },
+  { num: '04', title: 'Proportionality', desc: 'Frameworks scaled to the risk and the institution — never comply for its own sake.' },
 ]
 
 export default function ValuesSection() {
@@ -15,7 +15,7 @@ export default function ValuesSection() {
           </div>
           <div className="about-values-heading-right">
             <h2>Considered. Independent. Implementable.</h2>
-            <p>Our vision is to be the first call for boards and executives of regulated institutions when the matter is too important — or too sensitive — for anything less than senior counsel.</p>
+            <p>To be the first point of contact by regulated institutions in improving governance, risk and compliance.</p>
           </div>
         </div>
         <div className="values-card-grid">

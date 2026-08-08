@@ -7,7 +7,6 @@ import AboutSection from './sections/AboutSection'
 import ServicesSection from './sections/ServicesSection'
 import FounderSection from './sections/FounderSection'
 import ValuesSection from './sections/ValuesSection'
-import TestimonialsSection from './sections/TestimonialsSection'
 import FaqSection from './sections/FaqSection'
 import BlogSection from './sections/BlogSection'
 import CtaSection from './sections/CtaSection'
@@ -27,7 +26,6 @@ export default function Home() {
         <ServicesSection />
         <FounderSection />
         <ValuesSection />
-        <TestimonialsSection />
         <FaqSection />
         <BlogSection />
         <CtaSection />

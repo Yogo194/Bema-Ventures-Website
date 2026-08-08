@@ -5,7 +5,7 @@ import CtaSection from '../Home/sections/CtaSection'
 import InsightsHero from './sections/InsightsHero'
 import FeaturedEssay from './sections/FeaturedEssay'
 import EssaysSection from './sections/EssaysSection'
-import InsightsTestimonials from './sections/InsightsTestimonials'
+// import InsightsTestimonials from './sections/InsightsTestimonials'
 
 export default function Insights() {
   useEffect(() => {
@@ -19,7 +19,7 @@ export default function Insights() {
         <InsightsHero />
         <FeaturedEssay />
         <EssaysSection />
-        <InsightsTestimonials />
+        {/* <InsightsTestimonials /> */}
         <CtaSection />
       </main>
       <Footer />

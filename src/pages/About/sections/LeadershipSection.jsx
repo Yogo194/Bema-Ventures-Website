@@ -23,7 +23,7 @@ export default function LeadershipSection() {
             <h2>A career inside the institutions we now advise.</h2>
             <div className="leadership-bio">
               <p>Rotimi Omotayo is a professional accountant, banker and compliance expert with more than three decades of senior experience across the financial services sector. He served as Chief Audit Executive of a Tier-2 bank, where he led a wide-ranging mandate covering internal audit, fraud investigation, regulatory engagement and board-level risk reporting.</p>
-              <p>Throughout his career, Rotimi has advised boards and executive committees on the matters that determine institutional resilience — from the design of internal control environments to the conduct of sensitive investigations. He founded Bema Ventures to make that depth of experience available to organisations seeking counsel of equivalent calibre.</p>
+              <p>Throughout his career, Rotimi has advised boards and executive committees on the matters that determine institutional resilience — from the design of internal control environments to the conduct of sensitive investigations. He founded Bema Ventures to make that depth of experience available to support organisations seeking improvement in their business practices.</p>
             </div>
           </div>
           <div className="credentials-grid">
