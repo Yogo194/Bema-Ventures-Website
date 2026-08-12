@@ -3104,6 +3104,42 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: 132px;
   resize: vertical;
 }
+.contact-field.has-error input,
+.contact-field.has-error textarea {
+  border-color: #b42318;
+}
+.contact-field-error {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #b42318;
+}
+.contact-form-status {
+  width: 100%;
+  margin: -24px 0 0;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+}
+.contact-form-status.is-success {
+  color: #027a48;
+}
+.contact-form-status.is-error {
+  color: #b42318;
+}
+.contact-form-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+.contact-form-card .btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
 
 /* --- Contact FAQ --- */
 .contact-faq-section { padding: 0; }
